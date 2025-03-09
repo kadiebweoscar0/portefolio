@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./components/about";
 import HeroSection from "./components/heroSection";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <body className="p-3 flex flex-col items-center">
       {/* hero section */}
       <HeroSection />
+      <About />
     </body>
   );
 }

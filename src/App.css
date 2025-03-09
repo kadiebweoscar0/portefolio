@@ -97,6 +97,14 @@
   color: white;
 }
 
+#btnCv {
+  background-color: #1e2939;
+}
+
+a {
+  text-decoration: none;
+}
+
 @keyframes opacity {
   0%,
   100% {
