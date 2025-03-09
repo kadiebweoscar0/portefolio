@@ -93,6 +93,10 @@
   border: 5px solid rgba(0, 0, 0, 0.1);
 }
 
+#over:hover p {
+  color: white;
+}
+
 @keyframes opacity {
   0%,
   100% {
