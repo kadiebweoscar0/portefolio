@@ -83,7 +83,7 @@ export default function HeroSection() {
         <img
           src={osCode}
           alt="logo"
-          className="w-[80%] sm:w-[100%] md:w-[100%] rounded-3xl"
+          className="w-[80%]  sm:w-[100%] md:w-[100%] rounded-3xl"
         />
         {/* </div> */}
         <div className="h-[100%] flex flex-col justify-between gap-20 bg-blue-50 p-2.5 rounded-2xl">

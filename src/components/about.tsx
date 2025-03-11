@@ -6,7 +6,7 @@ export default function About() {
     <section className=" pt-14 my-5 flex flex-col gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]">
       <div className=" flex flex-col items-center">
         <h2 className=" text-2xl font-medium"> APROPOS DE MOI</h2>
-        <p>un aperçus sur moi</p>
+        <p>Un aperçus sur moi</p>
       </div>
       <div className=" flex flex-col py-3 items-center lg:flex-row gap-8">
         <div className=" m-auto">
