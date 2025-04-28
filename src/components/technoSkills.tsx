@@ -2,7 +2,7 @@ import React from "react";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import icon from "../assets/logo/Download GitHub Logo, Git Hub Icon On White Background.jpeg";
 
-const FrontEndCard: React.FC = () => {
+const TechnoSkills: React.FC = () => {
   return (
     <div className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/3 2xl:w-1/3 relative overflow-hidden bg-blue-50 shadow-lg rounded-xl p-3 sm:p-4 md:p-5 flex flex-col sm:flex-row items-center justify-between border transition-all duration-500 group">
       {/* Icône */}
@@ -76,4 +76,4 @@ const FrontEndCard: React.FC = () => {
   );
 };
 
-export default FrontEndCard;
+export default TechnoSkills;

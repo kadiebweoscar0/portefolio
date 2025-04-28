@@ -2,6 +2,7 @@ import "./App.css";
 import About from "./components/about";
 import HeroSection from "./components/heroSection";
 import Qualification from "./components/qualification";
+import TechnoSkills from "./components/technoSkills";
 
 function App() {
   return (
@@ -10,11 +11,18 @@ function App() {
       <HeroSection />
       <About />
       <Qualification />
-
-      {/* <div className=" flex flex-col items-center m-26">
-        <h2 className=" text-2xl font-medium"> QUALIFICATION</h2>
-        <p className=" text-center">mon parcours d'educatif</p>
-      </div> */}
+      <section className=" w-[100%]">
+        <div className=" flex flex-col items-center m-26 w">
+          <h2 className="text-3xl font-bold text-center"> Mes Skills</h2>
+          <p className="text-center text-gray-600">mes competences technique</p>
+        </div>
+        <div className=" w-[100%] flex flex-wrap items-center justify-center m-auto gap-8">
+          <TechnoSkills />
+          <TechnoSkills />
+          <TechnoSkills />
+          <TechnoSkills />
+        </div>
+      </section>
     </body>
   );
 }
