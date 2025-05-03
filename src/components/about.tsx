@@ -5,8 +5,11 @@ export default function About() {
   return (
     <section className=" pt-14 my-5 flex flex-col gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]">
       <div className=" flex flex-col items-center">
-        <h2 className=" text-2xl font-medium"> APROPOS DE MOI</h2>
-        <p>Un aperçus sur moi</p>
+        <h2 className=" text-3xl font-bold text-center uppercase">
+          {" "}
+          APROPOS DE MOI
+        </h2>
+        <p className=" text-center text-gray-600">Un aperçus sur moi</p>
       </div>
       <div className=" flex flex-col py-3 items-center lg:flex-row gap-8">
         <div className=" m-auto">
@@ -40,7 +43,7 @@ export default function About() {
           </div>
           <a
             id="btnCv"
-            className=" bg-gray-800 text-white font-bold py-2 px-4 rounded w-[50%] text-center hover:text-white"
+            className=" bg-gray-800 text-white font-bold py-2 px-4 rounded-full w-full sm:w-[50%] md:w-[50%] text-center hover:text-white"
             href="src/assets/fichier/cvFullStack&MobileOscar.pdf.pdf"
             download={"cvFullStack&MobileOscar.pdf.pdf"}
           >

@@ -29,7 +29,9 @@ export default function Qualification() {
   ];
   return (
     <section className="max-w-3xl mx-auto py-10">
-      <h2 className="text-3xl font-bold text-center">Qualification</h2>
+      <h2 className="text-3xl font-bold text-center uppercase">
+        Qualification
+      </h2>
       <p className="text-center text-gray-600">Mon parcours personnel</p>
 
       <div className="flex justify-center space-x-10 my-6">
