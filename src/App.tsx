@@ -29,6 +29,11 @@ import postManIcon from "./assets/logo/Postman.jpeg";
 import thunderClientIcon from "./assets/logo/thunderClient.jpeg";
 import gitIcon from "./assets/logo/Git.jpeg";
 import Services from "./components/services";
+import Projet from "./components/projet";
+import androidStudioIcon from "./assets/logo/Android Studio icon PNG and SVG Vector Free Download.jpeg";
+import vscodeIcon from "./assets/logo/Visual Studio Code logo in vector format - Brandlogos_net.jpeg";
+import codeIcon from "./assets/logo/code.jpeg";
+import canvaIcon from "./assets/logo/Free Logo Maker Create in Minutes on canva_com.jpeg";
 
 function App() {
   return (
@@ -37,7 +42,7 @@ function App() {
       <HeroSection />
       <About />
       <Qualification />
-      <section className=" w-[100%]">
+      <section className=" w-[100%] py-10">
         <div className=" flex flex-col items-center m-26 w">
           <h2 className="text-2xl font-bold text-center uppercase">
             Mes Skills
@@ -80,16 +85,16 @@ function App() {
             icon2={shopifyIcon}
             icon3={uiUxIcon}
             icon4={figmaIcon}
-            icon5={icons}
+            icon5={canvaIcon}
             title1="Cms & Web Design"
             title2="FONCTIONNALITÉ & ESTHÉTIQUE"
             iconCard={icons}
             skills=" Wordpress, Shopify, UI & UX, Figma, Canvas "
           />
           <TechnoSkills
-            icon1={icons}
-            icon2={icons}
-            icon3={icons}
+            icon1={vscodeIcon}
+            icon2={codeIcon}
+            icon3={androidStudioIcon}
             icon4={postManIcon}
             icon5={thunderClientIcon}
             icon6={gitIcon}
@@ -102,6 +107,7 @@ function App() {
         </div>
       </section>
       <Services />
+      <Projet />
     </div>
   );
 }

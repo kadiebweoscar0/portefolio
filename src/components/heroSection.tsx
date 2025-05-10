@@ -59,7 +59,7 @@ const Typewriter = () => {
 
 export default function HeroSection() {
   return (
-    <section className="py-3 flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row 2xl:flex-row items-center m-auto w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%] gap-5">
+    <section className="py-10 flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row 2xl:flex-row items-center m-auto w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%] gap-5">
       <div>
         <div className="py-4 flex gap-2">
           <div className="w-9 bg-black h-3.5"></div>

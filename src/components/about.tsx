@@ -3,7 +3,7 @@ import git from "../assets/logo/Download GitHub Logo, Git Hub Icon On White Back
 
 export default function About() {
   return (
-    <section className=" pt-14 my-5 flex flex-col gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]">
+    <section className=" pt-14 py-10 my-5 flex flex-col gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]">
       <div className=" flex flex-col items-center">
         <h2 className=" text-3xl font-bold text-center uppercase">
           {" "}
