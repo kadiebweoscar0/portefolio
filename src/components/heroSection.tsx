@@ -63,9 +63,7 @@ export default function HeroSection() {
       <div>
         <div className="py-4 flex gap-2">
           <div className="w-9 bg-black h-3.5"></div>
-          <p className="text-2xl sm:text-3xl md:text-4xl font-bold">
-            Oscar KADIEBWE
-          </p>
+          <p className="text-3xl text-center font-bold">Oscar KADIEBWE</p>
         </div>
         <div className="gap-2">
           <div className="flex gap-2">

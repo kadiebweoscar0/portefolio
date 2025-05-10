@@ -34,6 +34,7 @@ import androidStudioIcon from "./assets/logo/Android Studio icon PNG and SVG Vec
 import vscodeIcon from "./assets/logo/Visual Studio Code logo in vector format - Brandlogos_net.jpeg";
 import codeIcon from "./assets/logo/code.jpeg";
 import canvaIcon from "./assets/logo/Free Logo Maker Create in Minutes on canva_com.jpeg";
+import ScrollToTopButton from "./components/scrollToTopButton";
 
 function App() {
   return (
@@ -108,6 +109,7 @@ function App() {
       </section>
       <Services />
       <Projet />
+      <ScrollToTopButton />
     </div>
   );
 }
