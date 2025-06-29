@@ -10,9 +10,9 @@ export default function Qualification() {
     },
     {
       type: "education",
-      title: "Bac +3 en Informatique industrielle et reseau",
-      institution: "ISPT Kinshasa",
-      year: "2021 - 2022",
+      title: " Bac +2 en Développement Web et Mobile",
+      institution: "KADEA ACADEMY",
+      year: "2022 - 2023",
     },
     {
       type: "education",
@@ -22,13 +22,13 @@ export default function Qualification() {
     },
     {
       type: "education",
-      title: " Bac +2 en Développement Web et Mobile",
-      institution: "KADEA ACADEMY",
-      year: "2022 - 2023",
+      title: "Bac +3 en Informatique industrielle et reseau",
+      institution: "ISPT Kinshasa",
+      year: "2021 - 2022",
     },
   ];
   return (
-    <section className="max-w-3xl mx-auto py-10">
+    <>
       <h2 className="text-2xl font-bold text-center uppercase">
         Qualification
       </h2>
@@ -69,6 +69,6 @@ export default function Qualification() {
           </div>
         ))}
       </div>
-    </section>
+    </>
   );
 }

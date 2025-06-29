@@ -34,16 +34,44 @@ import androidStudioIcon from "./assets/logo/Android Studio icon PNG and SVG Vec
 import vscodeIcon from "./assets/logo/Visual Studio Code logo in vector format - Brandlogos_net.jpeg";
 import codeIcon from "./assets/logo/code.jpeg";
 import canvaIcon from "./assets/logo/Free Logo Maker Create in Minutes on canva_com.jpeg";
+import frontEndIcon from "./assets/logo/frontend.png";
+import backendIcon from "./assets/logo/backend.png";
+import webDesignIcon from "./assets/logo/ux.png";
+import outilDevIcon from "./assets/logo/outildev.png";
 import ScrollToTopButton from "./components/scrollToTopButton";
+import NavBar from "./components/navBar";
+import Contact from "./components/contact";
+
+const navItems = [
+  { id: "apropos", label: "À propos" },
+  { id: "qualification", label: "Qualification" },
+  { id: "skills", label: "Mes Skills" },
+  { id: "services", label: "Mes Services" },
+  { id: "realisations", label: "Réalisation" },
+  { id: "contact", label: "Contact" },
+];
 
 function App() {
   return (
-    <div className="p-3 flex flex-col items-center">
-      {/* hero section */}
-      <HeroSection />
-      <About />
-      <Qualification />
-      <section className=" w-[100%] py-10">
+    <main className="p-3 flex flex-col items-center">
+      <NavBar items={navItems} />
+      <section
+        id="hero"
+        className="py-10 flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row 2xl:flex-row items-center m-auto w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%] gap-5"
+      >
+        <HeroSection />
+      </section>
+      <section
+        id="apropos"
+        className=" pt-14 py-10 my-5 flex flex-col gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]"
+      >
+        <About />
+      </section>
+      <section id="qualification" className="max-w-3xl mx-auto py-10">
+        <Qualification />
+      </section>
+
+      <section id="skills" className=" w-[100%] py-10">
         <div className=" flex flex-col items-center m-26 w">
           <h2 className="text-2xl font-bold text-center uppercase">
             Mes Skills
@@ -62,8 +90,8 @@ function App() {
             icon8={reactJsIcon}
             icon9={reactNativeIcon}
             title1="Front-End"
-            title2="MA BOÎTE À OUTILS"
-            iconCard={icons}
+            title2="INTERFACES & INTERACTIONS"
+            iconCard={frontEndIcon}
             skills=" HTML5, CSS, Tailwind Css, Bootstrap, Material Ui, JavaScript, TypeScript, React js, React Native"
           />
           <TechnoSkills
@@ -77,7 +105,7 @@ function App() {
             icon8={mySqlIcon}
             title1="Back-End"
             title2="LOGIQUES & DONNEES"
-            iconCard={icons}
+            iconCard={backendIcon}
             skills=" Php, Laravel, Node js, Express js, Rest Api, Sql, PostgreSql,
             MySql"
           />
@@ -89,7 +117,7 @@ function App() {
             icon5={canvaIcon}
             title1="Cms & Web Design"
             title2="FONCTIONNALITÉ & ESTHÉTIQUE"
-            iconCard={icons}
+            iconCard={webDesignIcon}
             skills=" Wordpress, Shopify, UI & UX, Figma, Canvas "
           />
           <TechnoSkills
@@ -102,15 +130,31 @@ function App() {
             icon7={icons}
             title1="Outils Dev"
             title2="STRUCURER, TESTER, COLLABORER & PUBLIER"
-            iconCard={icons}
+            iconCard={outilDevIcon}
             skills=" VsCode, XCode, Android Studio, PostMan, Thunder Client, Git, Gihub"
           />
         </div>
       </section>
-      <Services />
-      <Projet />
+      <section
+        id="services"
+        className=" pt-14 py-10 my-5 flex flex-col gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]"
+      >
+        <Services />
+      </section>
+      <section
+        id="realisations"
+        className=" pt-14 py-10 my-5 flex flex-col items-center gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]"
+      >
+        <Projet />
+      </section>
+      <section
+        className=" pt-14 py-10 my-5 flex flex-col items-center gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]"
+        id="contact"
+      >
+        <Contact />
+      </section>
       <ScrollToTopButton />
-    </div>
+    </main>
   );
 }
 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useEffect } from "react";
 import "../App.css";
 import SocialMedia from "./socialMedia";
@@ -5,11 +6,12 @@ import whatsapp from "../assets/logo/Icônes de Whatsapp en téléchargement gra
 import gitHub from "../assets/logo/Download GitHub Logo, Git Hub Icon On White Background.jpeg";
 import linkdin from "../assets/logo/linkdinLogo.jpeg";
 import osCode from "../assets/logo/osCode.jpg";
+import designImg from "../assets/image/Gemini_Generated_Image_mly529mly529mly5.png";
 
 function openWhatsapp() {
   const phone: string = "243823616356";
   const message: string = encodeURIComponent(
-    "Bonjour, j'aimerais en savoir plus !"
+    "Salut, je suis intéressé(e) par votre profil de développeur. Pourrions-nous échanger davantage ?"
   );
   const url: string = `https://wa.me/${phone}?text=${message}`;
 
@@ -59,7 +61,7 @@ const Typewriter = () => {
 
 export default function HeroSection() {
   return (
-    <section className="py-10 flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row 2xl:flex-row items-center m-auto w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%] gap-5">
+    <>
       <div>
         <div className="py-4 flex gap-2">
           <div className="w-9 bg-black h-3.5"></div>
@@ -70,7 +72,7 @@ export default function HeroSection() {
             <p className="text-xl sm:text-2xl">Je suis : </p>
             <Typewriter />
           </div>
-          <p className="pl-2 py-3 text-justify border-l-2 border-l-sky-500 text-sm sm:text-base md:text-lg">
+          <p className="pl-2 py-3 text-justify border-l-2 border-l-sky-500 ">
             Passionné par la création d’applications performantes et intuitives,
             j’aide les entreprises et entrepreneurs à transformer leurs idées en
             solutions digitales sur mesure.
@@ -79,7 +81,7 @@ export default function HeroSection() {
       </div>
       <div className="flex flex-row w-full gap-2.5">
         <img
-          src={osCode}
+          src={designImg}
           alt="logo"
           className="w-[80%]  sm:w-[100%] md:w-[100%] rounded-3xl"
         />
@@ -89,20 +91,23 @@ export default function HeroSection() {
             urlImage={gitHub}
             altTxt="logo github"
             linkMedia="https://github.com/kadiebweoscar0"
+            disabled={false}
           />
           <SocialMedia
             urlImage={linkdin}
-            altTxt="logo facebook"
-            linkMedia="https://www.linkedin.com/login/fr"
+            altTxt="logo linkind"
+            linkMedia="https://www.linkedin.com/in/kadiebweoscar0"
+            disabled={true}
           />
           <SocialMedia
             urlImage={whatsapp}
             altTxt="logo facebook"
             linkMedia="#"
             onClick={openWhatsapp}
+            disabled={false}
           />
         </div>
       </div>
-    </section>
+    </>
   );
 }

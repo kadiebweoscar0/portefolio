@@ -1,16 +1,18 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import osCode from "../assets/logo/osCode.jpg";
-import git from "../assets/logo/Download GitHub Logo, Git Hub Icon On White Background.jpeg";
+import supportIcon from "../assets/logo/support.png";
+import callIcon from "../assets/logo/appel.png";
 
 export default function About() {
   return (
-    <section className=" pt-14 py-10 my-5 flex flex-col gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]">
+    <>
       <div className=" flex flex-col items-center">
         <h2 className=" text-2xl font-bold text-center uppercase">
           APROPOS DE MOI
         </h2>
         <p className=" text-center text-gray-600">Un aperçus sur moi</p>
       </div>
-      <div className=" flex flex-col py-3 items-center lg:flex-row gap-8">
+      <div className=" flex flex-col py-3 justify-center lg:flex-row gap-8">
         <div className=" m-auto">
           <img
             src={osCode}
@@ -18,38 +20,63 @@ export default function About() {
             alt=""
           />
         </div>
-        <div className=" m-auto flex flex-col gap-5">
-          <p className="py-3 text-justify text-sm sm:text-base md:text-lg">
+        <div className=" flex flex-col gap-5">
+          <p className="py-3 text-justify ">
             Mon expertise me permet de concevoir des solutions complètes,
             alliant performances, esthétique et ergonomie.
           </p>
-          <p className=" pl-2 py-3 text-justify border-l-2 border-l-sky-500 text-sm sm:text-base md:text-lg">
+          <p className=" pl-2 py-3 text-justify border-l-2 border-l-sky-500 ">
             Avec une approche centrée sur l'utilisateur, je développe des
             applications modernes et intuitives, tout en optimisant leur
             expérience et leur accessibilité. Que ce soit pour la création de
             site web, d'applications mobile ou l'amelioration d'interfaces, je
             mets mes comptétences au service de projets innovants et ambitieux.
           </p>
-          <div className=" flex gap-10">
-            <div className="  w-[30%] rounded-2xl bg-blue-50 p-2 gap-3 flex flex-col">
-              <img src={git} alt="git" className=" w-full rounded-2xl" />
-              <p className=" font-medium">Contact 24/7</p>
+          <div className=" w-[80%] mx-auto flex justify-between items-center border-t border-b border-gray-300 py-4">
+            <div className=" flex items-center gap-4">
+              <img src={supportIcon} alt="support-icon" className=" w-6 h-6" />
+              <div className=" flex flex-col">
+                <span className=" font-bold text-sm">Assistance</span>
+                <span className=" text-sm">En ligne 24/7</span>
+              </div>
             </div>
-            <div className="  w-[30%] rounded-2xl bg-blue-50 p-2 gap-3 flex flex-col">
-              <img src={git} alt="git" className=" w-full rounded-2xl" />
-              <p className=" font-medium">Support 24/7</p>
+            <div className=" flex items-center gap-4">
+              <img src={callIcon} alt="call-icon" className=" w-6 h-6" />
+              <div className=" flex flex-col">
+                <span className=" font-bold text-sm">Disponibilité</span>
+                <span className=" text-sm">Activité Partielle</span>
+              </div>
             </div>
           </div>
-          <a
+
+          {/*   <div className="w-[80%] mx-auto flex justify-between md:gap-10 border-t border-b border-gray-300 py-4">
+            <div className="w-[60px] rounded-2xl p-2 gap-3 flex flex-col items-center">
+              <img
+                src={callIcon}
+                alt="icon call"
+                className="rounded-2xl w-6 h-6"
+              />
+              <p className="font-medium text-xs text-center">Contact 24/7</p>
+            </div>
+            <div className="w-[60px] rounded-2xl p-2 gap-3 flex flex-col items-center">
+              <img
+                src={supportIcon}
+                alt="support icon"
+                className="rounded-2xl w-6 h-6"
+              />
+              <p className="font-medium text-xs text-center">Support 24/7</p>
+            </div>
+          </div> */}
+          {/* <a
             id="btnCv"
             className=" bg-gray-800 text-white font-bold py-2 px-4 rounded-full w-full sm:w-[50%] md:w-[50%] text-center hover:text-white"
             href="src/assets/fichier/cvFullStack&MobileOscar.pdf.pdf"
             download={"cvFullStack&MobileOscar.pdf.pdf"}
           >
             Télécharger mon cv
-          </a>
+          </a> */}
         </div>
       </div>
-    </section>
+    </>
   );
 }

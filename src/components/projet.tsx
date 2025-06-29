@@ -4,7 +4,7 @@ import ImageCarousel from "./imageCarousel";
  */
 function Projet() {
   return (
-    <section className=" pt-14 py-10 my-5 flex flex-col items-center gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]">
+    <>
       <div className=" flex flex-col items-center">
         <h2 className="text-2xl font-bold text-center uppercase">
           Réalisation
@@ -54,7 +54,7 @@ function Projet() {
           </div>
         </div>
       </div> */}
-    </section>
+    </>
   );
 }
 

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState, useRef } from "react";
 import osCodeImg from "../assets/logo/osCode.jpg";
-import img from "../assets/logo/Css2.jpeg";
+import imgEsa from "../assets/image/esa.png";
 import imgSodeicoAcademi from "../assets/image/sodeicoAcademi.png";
 import imgSodeicoHolding from "../assets/image/sodeicoHoldin.png";
 import imgDashboardMpqyroll from "../assets/image/dashboard-Mpayroll.png";
@@ -19,30 +19,30 @@ const projects: Project[] = [
   {
     id: 1,
     image: imgDashboardMpqyroll,
-    title: "Plateforme SeLoger",
-    description: `A travaillé sur le développement de SeLoger, l'une des principales plateformes immobilières de France.`,
+    title: "Logiciel de payement",
+    description: `M-payroll est un logiciel de payement en ligne des agents et prestataires de services simple et rapide`,
     technologies: ["React", "Node.js", "MongoDB", "AWS"],
   },
   {
     id: 2,
     image: imgSodeicoAcademi,
-    title: "Site Web Volvic",
-    description: `Contribution au site de Volvic, design responsive et présentation interactive des produits.`,
+    title: "Plateforme de elarning",
+    description: `Sodeico Académie est une plateforme d'apprentissage en ligne qui permet d‘apprendre rapidement`,
     technologies: ["JavaScript", "HTML5", "CSS3", "Responsive Design"],
   },
   {
     id: 3,
     image: imgSodeicoHolding,
-    title: "Plateforme SeLoger",
-    description: `A travaillé sur le développement de SeLoger, l'une des principales plateformes immobilières de France.`,
+    title: "site web de presentation",
+    description: `Sodeico Holding est un site web de présentation pour le compte du groupe Sodeico Holding`,
     technologies: ["React", "Node.js", "MongoDB", "AWS"],
   },
   {
     id: 4,
     image: imgMaketFuta,
-    title: "Site Web Volvic",
-    description: `Contribution au site de Volvic, design responsive et présentation interactive des produits.`,
-    technologies: ["JavaScript", "HTML5", "CSS3", "Responsive Design"],
+    title: "Maquette Application mobile",
+    description: `une maquette d'une application mobile pour le compte d'un client`,
+    technologies: ["figma"],
   },
   {
     id: 5,
@@ -53,10 +53,16 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    image: img,
-    title: "Site Web Volvic",
-    description: `Contribution au site de Volvic, design responsive et présentation interactive des produits.`,
-    technologies: ["JavaScript", "HTML5", "CSS3", "Responsive Design"],
+    image: imgEsa,
+    title: "Application mobile ESA",
+    description: `ESA est une application disponible sur Android et iPhone qui vous aide à trouver des stages académiques et professionnels.`,
+    technologies: [
+      "React native",
+      "Expo",
+      "laravel",
+      "Mysql",
+      "Responsive Design",
+    ],
   },
 ];
 
