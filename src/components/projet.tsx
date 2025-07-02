@@ -12,48 +12,6 @@ function Projet() {
         <p className="text-center text-gray-600">Quelques projet réalisé</p>
       </div>
       <ImageCarousel />
-      {/*  <div className=" flex flex-wrap items-center">
-        <div className=" relative group rounded-3xl w-full sm:w-[50%] md:w-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] p-5 mt-16">
-          <img
-            src={osCode}
-            alt="logo"
-            className="w-[100%] rounded-3xl object-cover"
-          />
-          <div className=" object-cover flex items-center justify-center absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-80  delay-150 duration-300 rounded-3xl">
-            <p className="text-white text-xl">mon texte</p>
-          </div>
-        </div>
-        <div className=" relative group rounded-3xl w-full sm:w-[50%] md:w-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] p-5">
-          <img
-            src={osCode}
-            alt="logo"
-            className="w-[100%] rounded-3xl object-cover"
-          />
-          <div className=" object-cover flex items-center justify-center absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-80  delay-150 duration-300 rounded-3xl">
-            <p className="text-white text-xl">mon texte</p>
-          </div>
-        </div>
-        <div className=" relative group rounded-3xl w-full sm:w-[50%] md:w-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] p-5">
-          <img
-            src={osCode}
-            alt="logo"
-            className="w-[100%] rounded-3xl object-cover"
-          />
-          <div className=" object-cover flex items-center justify-center absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-80  delay-150 duration-300 rounded-3xl">
-            <p className="text-white text-xl">mon texte</p>
-          </div>
-        </div>
-        <div className=" relative group rounded-3xl w-full sm:w-[50%] md:w-[50%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] p-5 mb-28">
-          <img
-            src={osCode}
-            alt="logo"
-            className="w-[100%] rounded-3xl object-cover"
-          />
-          <div className=" object-cover flex items-center justify-center absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-80  delay-150 duration-300 rounded-3xl">
-            <p className="text-white text-xl">mon texte</p>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }

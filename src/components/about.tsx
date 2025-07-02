@@ -48,33 +48,6 @@ export default function About() {
               </div>
             </div>
           </div>
-
-          {/*   <div className="w-[80%] mx-auto flex justify-between md:gap-10 border-t border-b border-gray-300 py-4">
-            <div className="w-[60px] rounded-2xl p-2 gap-3 flex flex-col items-center">
-              <img
-                src={callIcon}
-                alt="icon call"
-                className="rounded-2xl w-6 h-6"
-              />
-              <p className="font-medium text-xs text-center">Contact 24/7</p>
-            </div>
-            <div className="w-[60px] rounded-2xl p-2 gap-3 flex flex-col items-center">
-              <img
-                src={supportIcon}
-                alt="support icon"
-                className="rounded-2xl w-6 h-6"
-              />
-              <p className="font-medium text-xs text-center">Support 24/7</p>
-            </div>
-          </div> */}
-          {/* <a
-            id="btnCv"
-            className=" bg-gray-800 text-white font-bold py-2 px-4 rounded-full w-full sm:w-[50%] md:w-[50%] text-center hover:text-white"
-            href="src/assets/fichier/cvFullStack&MobileOscar.pdf.pdf"
-            download={"cvFullStack&MobileOscar.pdf.pdf"}
-          >
-            Télécharger mon cv
-          </a> */}
         </div>
       </div>
     </>

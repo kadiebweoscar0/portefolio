@@ -44,13 +44,13 @@ const NavBar = ({ items }: NavBarProps) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full bg-white shadow-md transition-transform duration-300 z-50 ${
+      className={`fixed top-0 left-0 w-full bg-white shadow-md transition-transform duration-300 z-50 p-3 ${
         showNav ? "translate-y-0" : "-translate-y-full"
       } hidden md:block`} // Ajouter hidden md:block ici pour cacher sur mobile
     >
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Titre ou logo */}
-        <div className="font-bold text-xl">Mon Portfolio</div>
+        <div className="font-bold text-xl">Oscar KADIEBWE</div>
 
         {/* Menu Desktop */}
         <ul className="hidden md:flex gap-6">
@@ -66,7 +66,7 @@ const NavBar = ({ items }: NavBarProps) => {
               >
                 {item.label}
                 <span
-                  className={`absolute left-0 -bottom-1 h-[2px] bg-blue-600 transition-all duration-500 ease-in-out ${
+                  className={`absolute left-0 -bottom-1 h-[2px] bg-sky-500 transition-all duration-500 ease-in-out ${
                     activeId === item.id ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />

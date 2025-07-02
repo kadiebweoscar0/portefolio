@@ -54,7 +54,7 @@ const navItems = [
 function App() {
   return (
     <>
-      <main className="p-3 flex flex-col items-center">
+      <main className="p-3 flex flex-col items-center overflow-hidden">
         <NavBar items={navItems} />
         <section
           id="hero"
@@ -151,9 +151,15 @@ function App() {
           <Projet />
         </section>
         <section
-          className=" pt-14 py-10 my-5 flex flex-col items-center gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]"
+          className=" min-h-screen flex flex-col items-center gap-10 w-full sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[60%] 2xl:w-[60%]"
           id="contact"
         >
+          <div className=" flex flex-col items-center">
+            <h2 className="text-2xl font-bold text-center uppercase">
+              Mes Coordonnées
+            </h2>
+            <p className="text-center text-gray-600">Entrer en Contact</p>
+          </div>
           <Contact />
         </section>
         <ScrollToTopButton />
