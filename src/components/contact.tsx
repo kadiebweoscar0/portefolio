@@ -15,12 +15,10 @@ function Contact() {
   }
 
   const messengerButton = () => {
-    // Remplace 'oscar.kadiebwe' par ton nom d’utilisateur ou ID de page
     window.location.href = "https://m.me/ross.jibi";
   };
 
   const GmailButton = () => {
-    // Remplace l'adresse email ci-dessous par la tienne
     window.location.href =
       "mailto:kadiebweoscar0@gmail.com?subject=Contact&body=Bonjour, je souhaite vous contacter...";
   };
@@ -36,7 +34,12 @@ function Contact() {
           <img src={email} alt="icon-watsapp" className="w-[10%] rounded-lg" />
           <p>Email</p>
           <p className=" underline text-gray-400">kadiebweoscar0@gmail.com</p>
-          <a href="#">Ecris moi + </a>
+          <a
+            href="#"
+            className=" text-sm text-blue-600 mt-3 inline-block font-medium"
+          >
+            Ecris moi →{" "}
+          </a>
         </div>
 
         <div
@@ -50,7 +53,12 @@ function Contact() {
           />
           <p>Messanger</p>
           <p className=" underline text-gray-400">Oscar Jibi</p>
-          <a href="#">Ecris moi + </a>
+          <a
+            href="#"
+            className=" text-sm text-blue-600 mt-3 inline-block font-medium"
+          >
+            Ecris moi →{" "}
+          </a>
         </div>
 
         <div
@@ -64,7 +72,12 @@ function Contact() {
           />
           <p>Whatsapp</p>
           <p className=" underline text-gray-400">+243 82 36 16 356</p>
-          <a href="#">Ecris moi + </a>
+          <a
+            href="#"
+            className=" text-sm text-blue-600 mt-3 inline-block font-medium"
+          >
+            Ecris moi →{" "}
+          </a>
         </div>
       </div>
       <form className=" w-full lg:w-[48%] pt-14 lg:pt-0">
@@ -95,18 +108,18 @@ function Contact() {
 
         <div className="coolinput">
           <label htmlFor="input" className="text">
-            Message
+            Projet
           </label>
           <textarea
-            name="message"
+            name="projet"
             className="input h-56 justify-start items-start"
-            id="message"
+            id="projet"
             placeholder="Ecrivez votre message"
           ></textarea>
         </div>
 
         <div className=" my-2 p-3.5 w-[100%] lg:w-[60%] bg-black rounded-2xl text-center text-white flex justify-center items-center gap-6">
-          <p className=" font-bold">Envoyer le message</p>
+          <p className=" font-bold">Envoyer le projet</p>
           <img src={envoyer} alt="icon-envoyer" className="w-[5%]" />
         </div>
       </form>

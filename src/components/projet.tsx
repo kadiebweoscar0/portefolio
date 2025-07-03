@@ -1,7 +1,6 @@
 import React from "react";
 import ImageCarousel from "./imageCarousel";
-/* import osCode from "../assets/logo/osCode.jpg";
- */
+
 function Projet() {
   return (
     <>

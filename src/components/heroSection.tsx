@@ -1,11 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useEffect } from "react";
 import "../App.css";
 import SocialMedia from "./socialMedia";
 import whatsapp from "../assets/logo/Icônes de Whatsapp en téléchargement gratuit.jpeg";
 import gitHub from "../assets/logo/Download GitHub Logo, Git Hub Icon On White Background.jpeg";
 import linkdin from "../assets/logo/linkdinLogo.jpeg";
-import osCode from "../assets/logo/osCode.jpg";
 import designImg from "../assets/image/Gemini_Generated_Image_mly529mly529mly5.png";
 
 function openWhatsapp() {
@@ -40,7 +38,7 @@ const Typewriter = () => {
       return () => clearTimeout(timeout);
     } else {
       const timeout = setTimeout(() => {
-        setText(""); // Réinitialise le texte
+        setText("");
         setCharIndex(0);
         setTextIndex((prev) => (prev + 1) % textArray.length); // Passe au texte suivant
       }, 1000);
@@ -85,7 +83,7 @@ export default function HeroSection() {
           alt="logo"
           className="w-[80%]  sm:w-[100%] md:w-[100%] rounded-3xl"
         />
-        {/* </div> */}
+
         <div className="h-[100%] flex flex-col justify-between gap-20 bg-blue-50 p-2.5 rounded-2xl">
           <SocialMedia
             urlImage={gitHub}

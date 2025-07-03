@@ -54,14 +54,10 @@ export default function Qualification() {
               index % 2 === 0 ? "justify-start" : "justify-end"
             }`}
           >
-            {/* Contenu */}
             <div className="w-6/12 p-4 rounded-lg">
               <h3 className="text-lg font-semibold">{item.title}</h3>
               <p className="text-gray-600">{item.institution}</p>
-              <div className="text-gray-500 text-sm mt-1">
-                {/* <FaCalendarAlt className="mr-2" />  */}
-                {item.year}
-              </div>
+              <div className="text-gray-500 text-sm mt-1">{item.year}</div>
             </div>
 
             {/* Point central */}

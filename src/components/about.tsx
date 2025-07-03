@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import osCode from "../assets/logo/osCode.jpg";
 import supportIcon from "../assets/logo/support.png";
 import callIcon from "../assets/logo/appel.png";
@@ -17,7 +16,7 @@ export default function About() {
           <img
             src={osCode}
             className=" w-full sm:w-[100%] md:w-[100%] rounded-3xl m-auto"
-            alt=""
+            alt="image-oscar"
           />
         </div>
         <div className=" flex flex-col gap-5">

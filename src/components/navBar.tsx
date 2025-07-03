@@ -1,7 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from "react";
-import MenuIcon from "../assets/logo/menu-burger.png";
-import CloseIcon from "../assets/logo/x.png";
 
 type NavItem = {
   id: string;

@@ -54,7 +54,7 @@ const navItems = [
 function App() {
   return (
     <>
-      <main className="p-3 flex flex-col items-center overflow-hidden">
+      <main className="p-3 flex flex-col items-center overflow-hidden gap-10">
         <NavBar items={navItems} />
         <section
           id="hero"
