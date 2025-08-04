@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import whatsapp from "../assets/logo/Icônes de Whatsapp en téléchargement gratuit.jpeg";
+import whatsapp from "../assets/logo/whatsapp.jpeg";
 import messanger from "../assets/logo/messager.png";
 import email from "../assets/logo/e-mail.png";
 import envoyer from "../assets/logo/envoyer.png";

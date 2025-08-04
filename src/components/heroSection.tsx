@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "../App.css";
 import SocialMedia from "./socialMedia";
-import whatsapp from "../assets/logo/Icônes de Whatsapp en téléchargement gratuit.jpeg";
-import gitHub from "../assets/logo/Download GitHub Logo, Git Hub Icon On White Background.jpeg";
+import whatsapp from "../assets/logo/whatsapp.jpeg";
+import gitHub from "../assets/logo/github-logo.jpeg";
 import linkdin from "../assets/logo/linkdinLogo.jpeg";
 import designImg from "../assets/image/Gemini_Generated_Image_mly529mly529mly5.png";
 

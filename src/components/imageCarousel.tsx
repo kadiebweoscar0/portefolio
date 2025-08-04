@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState, useRef } from "react";
 import osCodeImg from "../assets/logo/osCode.jpg";
 import imgEsa from "../assets/image/esa.png";
@@ -5,6 +6,7 @@ import imgSodeicoAcademi from "../assets/image/sodeicoAcademi.png";
 import imgSodeicoHolding from "../assets/image/sodeicoHoldin.png";
 import imgDashboardMpqyroll from "../assets/image/dashboard-Mpayroll.png";
 import imgMaketFuta from "../assets/image/maket-app-futa.png";
+import findFreelance from "../assets/image/find-freelance.jpg";
 
 type Project = {
   id: number;
@@ -50,7 +52,7 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    image: osCodeImg,
+    image: findFreelance,
     title: "find-freelance",
     description: `find-freelance est une plateforme qui met en relation entre les freelance et les personnes qui cherche les freelance.`,
     technologies: ["React", "Node.js", "MongoDB"],
