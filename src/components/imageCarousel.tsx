@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState, useRef } from "react";
-import osCodeImg from "../assets/logo/osCode.jpg";
 import imgEsa from "../assets/image/esa.png";
 import imgSodeicoAcademi from "../assets/image/sodeicoAcademi.png";
 import imgSodeicoHolding from "../assets/image/sodeicoHoldin.png";
