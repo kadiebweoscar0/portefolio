@@ -12,6 +12,7 @@ type Project = {
   title: string;
   description: string;
   technologies: string[];
+  url: string;
 };
 
 const projects: Project[] = [
@@ -21,6 +22,7 @@ const projects: Project[] = [
     title: "Logiciel de payement",
     description: `M-payroll est un logiciel de payement en ligne des agents et prestataires de services simple et rapide`,
     technologies: ["React", "Node.js", "MongoDB", "AWS"],
+    url: "https://mpayroll.net/",
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ const projects: Project[] = [
     title: "Plateforme de elarning",
     description: `Sodeico Académie est une plateforme d'apprentissage en ligne qui permet d‘apprendre rapidement`,
     technologies: ["JavaScript", "HTML5", "CSS3", "Responsive Design"],
+    url: "https://sodeico.academy/",
   },
   {
     id: 3,
@@ -35,6 +38,7 @@ const projects: Project[] = [
     title: "site web de presentation",
     description: `Sodeico Holding est un site web de présentation pour le compte du groupe Sodeico Holding`,
     technologies: ["React", "Node.js", "MongoDB", "AWS"],
+    url: "https://www.sodeicoholding.com/",
   },
   {
     id: 4,
@@ -42,26 +46,23 @@ const projects: Project[] = [
     title: "Maquette Application mobile",
     description: `une maquette d'une application mobile pour le compte d'un client`,
     technologies: ["figma"],
+    url: "https://www.figma.com/design/TIJpZSRC03MqxLVPS4bE0l/Futa-banki-Mobile-App-Ui-Kit-With-light---Dark-Mode-High-Quality-Ui-43--Screen-template--Community-?node-id=1-4&p=f&t=F46GQOSQkr1VOPtE-0",
   },
   {
     id: 5,
     image: osCodeImg,
-    title: "Plateforme SeLoger",
-    description: `A travaillé sur le développement de SeLoger, l'une des principales plateformes immobilières de France.`,
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
+    title: "find-freelance",
+    description: `find-freelance est une plateforme qui met en relation entre les freelance et les personnes qui cherche les freelance.`,
+    technologies: ["React", "Node.js", "MongoDB"],
+    url: "https://www.find-freelance.com/",
   },
   {
     id: 6,
     image: imgEsa,
     title: "Application mobile ESA",
     description: `ESA est une application disponible sur Android et iPhone qui vous aide à trouver des stages académiques et professionnels.`,
-    technologies: [
-      "React native",
-      "Expo",
-      "laravel",
-      "Mysql",
-      "Responsive Design",
-    ],
+    technologies: ["React native", "Expo", "laravel", "Mysql", "Redux"],
+    url: "https://esardc.com/",
   },
 ];
 
@@ -143,7 +144,7 @@ const ImageCardCarousel = () => {
                 {project.description}
               </p>
               <a
-                href="#"
+                href={`${project.url}`}
                 className="text-sm text-blue-600 mt-3 inline-block font-medium"
               >
                 Voir le Projet →
