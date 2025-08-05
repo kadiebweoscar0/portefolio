@@ -5,6 +5,8 @@ import imgSodeicoHolding from "../assets/image/sodeicoHoldin.png";
 import imgDashboardMpqyroll from "../assets/image/dashboard-Mpayroll.png";
 import imgMaketFuta from "../assets/image/maket-app-futa.png";
 import findFreelance from "../assets/image/find-freelance.jpg";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 type Project = {
   id: number;
@@ -120,6 +122,8 @@ const ImageCardCarousel = () => {
     return () => clearInterval(interval);
   }, [currentStep, cardsPerStep]);
 
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <div className="w-full relative py-8 px-4">
       <div
@@ -131,11 +135,16 @@ const ImageCardCarousel = () => {
             key={project.id}
             className="card min-w-full sm:min-w-[48%] bg-white rounded-2xl shadow-md overflow-hidden"
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 sm:h-64 object-cover"
-            />
+            <>
+              {!isLoaded && <Skeleton height={256} />}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 sm:h-64 object-cover"
+                style={{ display: isLoaded ? "block" : "none" }}
+                onLoad={() => setIsLoaded(true)}
+              />
+            </>
             <div className="p-4">
               <h3 className="text-base sm:text-lg font-semibold">
                 {project.title}
