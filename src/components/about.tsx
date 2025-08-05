@@ -9,7 +9,7 @@ export default function About() {
         <h2 className=" text-2xl font-bold text-center uppercase">
           APROPOS DE MOI
         </h2>
-        <p className=" text-center text-gray-600">Un aperçus sur moi</p>
+        <p className=" text-center text-gray-600">Un aperçu sur moi</p>
       </div>
       <div className=" flex flex-col py-3 justify-center lg:flex-row gap-8">
         <div className=" m-auto">

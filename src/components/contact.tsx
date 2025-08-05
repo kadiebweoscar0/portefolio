@@ -134,7 +134,7 @@ function Contact() {
             type="email"
             placeholder="Inserer votre email."
             name="email"
-            className="input"
+            className="input "
             required
             id="input"
           />

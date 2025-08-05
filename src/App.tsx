@@ -78,7 +78,7 @@ function App() {
               Mes Skills
             </h2>
             <p className="text-center text-gray-600">
-              mes competences technique
+              mes compétences techniques
             </p>
           </div>
           <div className=" w-[100%] flex flex-wrap items-center justify-center m-auto gap-8">

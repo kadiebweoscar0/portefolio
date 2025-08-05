@@ -19,7 +19,7 @@ function openWhatsapp() {
 const textArray: string[] = [
   "Développeur web full stack.",
   "Développeur Mobile.",
-  "UI/UX Design.",
+  "UI/UX Designer.",
   "Web Master.",
 ];
 
