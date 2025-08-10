@@ -4,7 +4,6 @@ import imgSodeicoAcademi from "../assets/image/sodeicoAcademi.png";
 import imgSodeicoHolding from "../assets/image/sodeicoHoldin.png";
 import imgDashboardMpqyroll from "../assets/image/dashboard-Mpayroll.png";
 import imgMaketFuta from "../assets/image/maket-app-futa.png";
-import findFreelance from "../assets/image/find-freelance.jpg";
 
 type Project = {
   id: number;
@@ -47,14 +46,6 @@ const projects: Project[] = [
     description: `une maquette d'une application mobile pour le compte d'un client`,
     technologies: ["figma"],
     url: "https://www.figma.com/design/TIJpZSRC03MqxLVPS4bE0l/Futa-banki-Mobile-App-Ui-Kit-With-light---Dark-Mode-High-Quality-Ui-43--Screen-template--Community-?node-id=1-4&p=f&t=F46GQOSQkr1VOPtE-0",
-  },
-  {
-    id: 5,
-    image: findFreelance,
-    title: "find-freelance",
-    description: `find-freelance est une plateforme qui met en relation entre les freelance et les personnes qui cherche les freelance.`,
-    technologies: ["React", "Node.js", "MongoDB"],
-    url: "https://www.find-freelance.com/",
   },
   {
     id: 6,
